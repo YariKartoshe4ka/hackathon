@@ -1,7 +1,7 @@
 from os import getenv
 
-from dotenv import load_dotenv
 from aiogram import Bot
+from dotenv import load_dotenv
 
 from .dialogs.register import register_dialogs
 from .dispatcher import dp

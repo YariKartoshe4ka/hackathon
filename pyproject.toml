@@ -8,7 +8,8 @@ license = { text = "GPL-3.0-only" }
 dependencies = [
     "aiogram",
     "aiogram_dialog",
-    "python-dotenv"
+    "python-dotenv",
+    "sqlalchemy"
 ]
 version = "0.0.1"
 
