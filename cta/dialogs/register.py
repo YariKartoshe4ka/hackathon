@@ -1,7 +1,7 @@
 from .auth.dialogs import auth_dialog
-from .main.dialogs import main_dialog
+from .user.register import user_dialogs
 
 
 def register_dialogs():
     auth_dialog()
-    main_dialog()
+    user_dialogs()

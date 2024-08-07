@@ -1,6 +1,6 @@
 from ..database.client import save_user
 from ..dialogs.auth.states import AuthStateGroup
-from ..dialogs.main.states import MainStateGroup
+from ..dialogs.user.menu.states import UserMenuStateGroup
 
 
 async def set_username(callback, msg_input, dialog_manager):  # noqa: U100
@@ -41,4 +41,4 @@ async def register_user(callback, _, dialog_manager):
     save_user(callback.from_user.id, data.get('skills', {}))
 
     await dialog_manager.done()
-    await dialog_manager.start(MainStateGroup.main_menu)
+    await dialog_manager.start(UserMenuStateGroup.menu)

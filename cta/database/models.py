@@ -19,7 +19,7 @@ class User(Base):
     xp = Column(Integer)
     city = Column(String)
     univer = Column(String)
-    # idCard = Column(String)
+    card_id = Column(Integer)
 
     web = Column(Integer)
     rev = Column(Integer)
